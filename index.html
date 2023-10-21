@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Diet Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Fitness and Diet Planner</h1>
+
+    <div class="toggle-container">
+        <label for="viewToggle">View:</label>
+        <select id="viewToggle">
+            <option value="daily">Daily</option>
+            <option value="weeklyExercise">Weekly Exercise</option>
+            <option value="weeklyMeals">Weekly Meals</option>
+        </select>
+    </div>
+
+    <div id="exercisePlan"></div>
+    <div id="mealPlan"></div>
+
+    <div class="timer-container">
+        <h2>Exercise Timer</h2>
+        <div id="timerDisplay">00:00</div>
+        <button id="startTimer">Start</button>
+        <button id="stopTimer">Stop</button>
+        <button id="resetTimer">Reset</button>
+    </div>
+
+    <div class="lightbox" id="videoLightbox">
+        <div class="lightbox-content">
+            <span class="close" id="closeLightbox">&times;</span>
+            <iframe id="videoPlayer" width="560" height="315" src="" frameborder="0" allowfullscreen autoplay></iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
